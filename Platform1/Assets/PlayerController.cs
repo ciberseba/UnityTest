@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
 	{
 		RaycastHit2D hit;
 		Vector2 pos = transform.position;
-		hit = Physics2D.CircleCast(pos, 0.23f, Vector2.down, 0.7f, ~(1 << layer));
+		hit = Physics2D.CircleCast(pos, 0.23f, Vector2.down, 0.8f, ~(1 << layer));
 		if (hit.collider != null) {
 			#if DEBUG
 			Vector3 p1 = new Vector3(hit.point.x, hit.point.y + 1);
