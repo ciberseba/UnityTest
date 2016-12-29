@@ -1,0 +1,45 @@
+Mono path[0] = 'C:/Users/Sebastian/Documents/FlappyBird/FlappyBird_Data/Managed'
+Mono path[1] = 'C:/Users/Sebastian/Documents/FlappyBird/FlappyBird_Data/Mono'
+Mono config path = 'C:/Users/Sebastian/Documents/FlappyBird/FlappyBird_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Sebastian/Documents/FlappyBird/FlappyBird_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55189
+Multi-casting "[IP] 192.168.0.40 [Port] 55189 [Flags] 2 [Guid] 2792312115 [EditorId] 265127008 [Version] 1048832 [Id] WindowsPlayer(Seba) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55189]
+PlayerConnection already initialized - listening to [0.0.0.0:55189]
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics (ID=0xf31)
+    Vendor:   Intel
+    VRAM:     928 MB
+    Driver:   10.18.10.4276
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.139 seconds
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Sebastian\Documents\FlappyBird\FlappyBird_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 6.888357 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 28.350258 ms
+System memory in use before: 17.5 MB.
+System memory in use after: 17.5 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 314.
+Total: 1.109699 ms (FindLiveObjects: 0.165887 ms CreateObjectMapping: 0.059076 ms MarkObjects: 0.807698 ms  DeleteObjects: 0.037336 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2238 -> priority: 1 
