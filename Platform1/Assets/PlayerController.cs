@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	private float moveX = 0f;
 	private float moveY = 0f;
 	private int layer;
+	private float currentSpeed;
 
 	// Use this for initialization
 	void Start()
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
 		rb2d = GetComponent<Rigidbody2D>();
 		groundCollider = GetComponentInChildren<CircleCollider2D>();
 		layer = LayerMask.NameToLayer("Player");
+		currentSpeed = speed;
 	}
 
 	void Update()
@@ -38,10 +40,16 @@ public class PlayerController : MonoBehaviour
 		moveX = 0;
 		
 		if (Input.GetAxisRaw("Horizontal") < 0)
-			transform.position += Vector3.left * speed * Time.deltaTime;
+			transform.position += Vector3.left * currentSpeed * Time.deltaTime;
 
 		if (Input.GetAxisRaw("Horizontal") > 0)
-			transform.position += Vector3.right * speed * Time.deltaTime;
+			transform.position += Vector3.right * currentSpeed * Time.deltaTime;
+
+		if (Input.GetButtonDown ("Fire1"))
+			currentSpeed = speed * 1.5f;
+
+		if (Input.GetButtonUp ("Fire1"))
+			currentSpeed = speed;
 
 		//rb2d.AddForce (new Vector2 (moveX, 0));
 		rb2d.AddForce(new Vector2(0, moveY), ForceMode2D.Impulse);
