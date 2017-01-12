@@ -32,7 +32,11 @@ public class PlayerController : MonoBehaviour
 			moveY = jumpHeigth;
 		if (Input.GetButtonUp("Jump"))
 			cutJump();
-	}
+        if (Input.GetButtonDown("Fire1"))
+            currentSpeed = speed * 1.5f;
+        if (Input.GetButtonUp("Fire1"))
+            currentSpeed = speed;
+    }
 
 	// Update is called once per frame
 	void FixedUpdate()
@@ -44,12 +48,6 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetAxisRaw("Horizontal") > 0)
 			transform.position += Vector3.right * currentSpeed * Time.deltaTime;
-
-		if (Input.GetButtonDown ("Fire1"))
-			currentSpeed = speed * 1.5f;
-
-		if (Input.GetButtonUp ("Fire1"))
-			currentSpeed = speed;
 
 		//rb2d.AddForce (new Vector2 (moveX, 0));
 		rb2d.AddForce(new Vector2(0, moveY), ForceMode2D.Impulse);
